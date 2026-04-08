@@ -1,17 +1,29 @@
 # Proyecto BBDD
 
-## Estructura inicial
-- `data/` → archivos CSV
-- `diagrams/` → diagrama E/R y modelo lógico
-- `sql/` → scripts SQL
+## Descripción del proyecto
+Este proyecto tiene como objetivo transformar una tabla plana con datos de alumnado y claustro en una base de datos relacional normalizada.
 
-## Archivos SQL
-- `01_create_tables.sql`
-- `02_insert_data.sql`
-- `03_queries_demo.sql`
+A partir de varios archivos CSV, se trabaja la limpieza, organización y estructuración de los datos para construir un modelo relacional en PostgreSQL, acompañado de su diagrama E/R, modelo lógico, scripts SQL y consultas de prueba.
 
-## Pendiente
-- cerrar el modelo final en grupo
-- definir tablas y relaciones
-- cargar datos en PostgreSQL
-- probar queries
+---
+
+## Objetivo
+Diseñar una base de datos funcional y escalable que permita:
+
+- separar entidades correctamente
+- reducir redundancia
+- mantener integridad referencial
+- consultar la información de forma clara y eficiente
+
+---
+
+## Flujo general del proyecto
+
+```text
+CSV data
+↓
+Python + pandas
+↓
+PostgreSQL
+↑
+pgAdmin 4
